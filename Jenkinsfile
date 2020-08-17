@@ -114,11 +114,11 @@ pipeline
 		}
 		unsuccessful
 		{
-			emailext attachLog: true, body: 'See the attacjed log below', subject: 'Build $BUILD_NUMBER has failed', to: 'william.massao.ftt+jenkins@gmail.com'
+			emailext attachLog: true, body: 'See the attacjed log below', subject: 'Build $BUILD_NUMBER has failed', to: 'william.massao.ftt@gmail.com'
 		}
 		fixed
 		{
-			emailext attachLog: true, body: 'See the attacjed log below', subject: 'Build $BUILD_NUMBER is fine!', to: 'william.massao.ftt+jenkins@gmail.com'
+			emailext attachLog: true, body: 'See the attacjed log below', subject: 'Build $BUILD_NUMBER is fine!', to: 'william.massao.ftt@gmail.com'
 		}
 	}
 }
