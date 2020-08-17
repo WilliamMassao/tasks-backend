@@ -110,7 +110,7 @@ pipeline
 		always
 		{
 			junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml, api-test/target/surefire-reports/*.xml, funcionatl-test/target/surefire-reports/*.xml'
-			archiveArtifacts artifacts: 'target/tasks-backend.war, frontend/target/tasks.war', onlyIfSuccssful: true
+			archiveArtifacts artifacts: 'target/tasks-backend.war, frontend/target/tasks.war', onlyIfSuccessful: true
 			
 			
 		}
