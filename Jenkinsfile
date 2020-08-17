@@ -112,6 +112,14 @@ pipeline
 			junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml, api-test/target/surefire-reports/*.xml, funcionatl-test/target/surefire-reports/*.xml'
 			
 		}
+		unsuccessful
+		{
+			emailext attachLog: true, body: 'See the attacjed log below', subject: 'Build $BUILD_NUMBER has failed', to: 'william.massao.ftt+jenkins@gmail.com'
+		}
+		fixed
+		{
+			emailext attachLog: true, body: 'See the attacjed log below', subject: 'Build $BUILD_NUMBER is fine!', to: 'william.massao.ftt+jenkins@gmail.com'
+		}
 	}
 }
 
